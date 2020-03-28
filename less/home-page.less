@@ -1,13 +1,11 @@
 #intro {
 	display: flex;
 	justify-content: center;
-    //border: 1px, solid red;
-    
+       
     #intro-info {
 		display: flex;
 		width: @default-margin;
 		
-
 		#intro-a {
 			
 			img {
@@ -88,41 +86,61 @@
     }
 }
 
-#listings-container {	
-    .flex-space-evenly();
-    flex-wrap: wrap;
-    width: @default-margin;
-    //background-color: @content-color;
-    border: 1px solid red;
-    section {
-        display: flex;
-        //flex-direction: row;
-        padding-bottom: 1%;
-        width: @inner-margin;
-        //border: 1px solid blue;
-        font-style: italic;
-
-        @media @mobil {
-            width: 100%;
-            padding-bottom: 3%;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            
-            img {
-                width: 80%;
-            }
-        }
-        
-        p {
-            margin: 2%;
-        }
-
-    }
+#listings {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
     
-    @media @mobil {
-        
-        flex-direction: column;
+    img {
+        width: 175px;
+        height: 175px;
     }
 
+	h3 {
+		font-size: 1rem;
+		font-weight: bold;
+		margin: 1% 0 1% 0;
+	
+	}
+	
+
+	#listings-container {	
+		.flex-space-evenly();
+		flex-wrap: wrap;
+		width: @default-margin;
+		//background-color: @content-color;
+        //border: 1px solid red;
+		section {
+			display: flex;
+            //flex-direction: row;
+            padding-bottom: 1%;
+			width: @inner-margin;
+            //border: 1px solid blue;
+            font-style: italic;
+
+			@media @mobil {
+				width: 100%;
+				padding-bottom: 3%;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                
+                img {
+                    width: 80%;
+                }
+            }
+            
+            p {
+                margin: 2%;
+            }
+	
+		}
+		
+		@media @mobil {
+			
+			flex-direction: column;
+		}
+
+	}
 }

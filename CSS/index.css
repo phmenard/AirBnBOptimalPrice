@@ -133,6 +133,58 @@ table {
 body {
   background-color: #cddddd;
 }
+#my-header {
+  display: flex;
+  justify-content: center;
+  border: none;
+}
+#my-header #header-info h1,
+#my-header p {
+  margin: 1%;
+  color: white;
+  font-size: xx-large;
+}
+@media (max-width:500px) {
+  #my-header #header-info h1,
+  #my-header p {
+    font-size: 100%;
+  }
+}
+#my-header header {
+  width: 60%;
+  background-color: #a599b5;
+}
+#my-header header h1 {
+  margin-top: 1%;
+}
+#my-header header p {
+  font-size: 0.7rem;
+  margin-top: 0.2%;
+}
+#my-header header nav {
+  display: flex;
+  justify-content: flex-end;
+}
+#my-header header nav a {
+  padding: 0 8% 1% 0;
+  margin-top: 2%;
+  text-decoration: none;
+  color: white;
+}
+#my-header header nav #header-info {
+  display: flex;
+  justify-content: center;
+}
+@media (max-width:500px) {
+  #my-header header nav {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+#my-header header nav :hover {
+  color: #acbdba;
+}
 #intro {
   display: flex;
   justify-content: center;
@@ -200,90 +252,52 @@ body {
     border-bottom: 1px dotted grey;
   }
 }
-#listings-container {
+#listings {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+#listings img {
+  width: 175px;
+  height: 175px;
+}
+#listings h3 {
+  font-size: 1rem;
+  font-weight: bold;
+  margin: 1% 0 1% 0;
+}
+#listings #listings-container {
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
   width: 60%;
-  border: 1px solid red;
 }
-#listings-container section {
+#listings #listings-container section {
   display: flex;
   padding-bottom: 1%;
   width: 40%;
   font-style: italic;
 }
 @media (max-width:500px) {
-  #listings-container section {
+  #listings #listings-container section {
     width: 100%;
     padding-bottom: 3%;
     flex-direction: column;
     justify-content: center;
     align-items: center;
   }
-  #listings-container section img {
+  #listings #listings-container section img {
     width: 80%;
   }
 }
-#listings-container section p {
+#listings #listings-container section p {
   margin: 2%;
 }
 @media (max-width:500px) {
-  #listings-container {
+  #listings #listings-container {
     flex-direction: column;
   }
-}
-#my-header {
-  display: flex;
-  justify-content: center;
-  border: none;
-}
-#my-header #header-info h1,
-#my-header p {
-  margin: 1%;
-  color: white;
-  font-size: xx-large;
-}
-@media (max-width:500px) {
-  #my-header #header-info h1,
-  #my-header p {
-    font-size: 100%;
-  }
-}
-#my-header header {
-  width: 60%;
-  background-color: #a599b5;
-}
-#my-header header h1 {
-  margin-top: 1%;
-}
-#my-header header p {
-  font-size: 0.7rem;
-  margin-top: 0.2%;
-}
-#my-header header nav {
-  display: flex;
-  justify-content: flex-end;
-}
-#my-header header nav a {
-  padding: 0 8% 1% 0;
-  margin-top: 2%;
-  text-decoration: none;
-  color: white;
-}
-#my-header header nav #header-info {
-  display: flex;
-  justify-content: center;
-}
-@media (max-width:500px) {
-  #my-header header nav {
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-}
-#my-header header nav :hover {
-  color: #acbdba;
 }
 #footer {
   display: flex;
