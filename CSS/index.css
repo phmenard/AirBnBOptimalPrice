@@ -1,0 +1,336 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+}
+body {
+  background-color: #cddddd;
+}
+#intro {
+  display: flex;
+  justify-content: center;
+}
+#intro #intro-info {
+  display: flex;
+  width: 60%;
+}
+@media (max-width:500px) {
+  #intro #intro-info #intro-a img {
+    width: 100%;
+    padding-bottom: 3%;
+  }
+}
+#intro #intro-info #intro-b {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 5%;
+}
+#intro #intro-info #intro-b h1 {
+  display: flex;
+  justify-content: space-evenly;
+}
+@media (max-width:500px) {
+  #intro #intro-info #intro-b h1 {
+    margin: 3% 0 3% 3%;
+  }
+}
+@media (max-width:500px) {
+  #intro #intro-info {
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+#target-goals {
+  display: flex;
+  justify-content: center;
+}
+#target-goals #target-goals-info {
+  display: flex;
+  justify-content: space-evenly;
+  width: 60%;
+}
+#target-goals #target-goals-info #target-goals-info-a {
+  width: 40%;
+  margin: 1% 0 1% 0;
+}
+#target-goals #target-goals-info #target-goals-info-a h2 {
+  margin-bottom: 2%;
+  font-weight: bold;
+}
+#target-goals #target-goals-info #target-goals-info-b {
+  width: 40%;
+  margin: 1% 0 1% 0;
+}
+#target-goals #target-goals-info #target-goals-info-b h2 {
+  margin-bottom: 2%;
+  font-weight: bold;
+}
+@media (max-width:500px) {
+  #target-goals {
+    margin-top: 2%;
+    border-top: 1px dotted grey;
+    border-bottom: 1px dotted grey;
+  }
+}
+#listings-container {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  width: 60%;
+  border: 1px solid red;
+}
+#listings-container section {
+  display: flex;
+  padding-bottom: 1%;
+  width: 40%;
+  font-style: italic;
+}
+@media (max-width:500px) {
+  #listings-container section {
+    width: 100%;
+    padding-bottom: 3%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  #listings-container section img {
+    width: 80%;
+  }
+}
+#listings-container section p {
+  margin: 2%;
+}
+@media (max-width:500px) {
+  #listings-container {
+    flex-direction: column;
+  }
+}
+#my-header {
+  display: flex;
+  justify-content: center;
+  border: none;
+}
+#my-header #header-info h1,
+#my-header p {
+  margin: 1%;
+  color: white;
+  font-size: xx-large;
+}
+@media (max-width:500px) {
+  #my-header #header-info h1,
+  #my-header p {
+    font-size: 100%;
+  }
+}
+#my-header header {
+  width: 60%;
+  background-color: #a599b5;
+}
+#my-header header h1 {
+  margin-top: 1%;
+}
+#my-header header p {
+  font-size: 0.7rem;
+  margin-top: 0.2%;
+}
+#my-header header nav {
+  display: flex;
+  justify-content: flex-end;
+}
+#my-header header nav a {
+  padding: 0 8% 1% 0;
+  margin-top: 2%;
+  text-decoration: none;
+  color: white;
+}
+#my-header header nav #header-info {
+  display: flex;
+  justify-content: center;
+}
+@media (max-width:500px) {
+  #my-header header nav {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+#my-header header nav :hover {
+  color: #acbdba;
+}
+#footer {
+  display: flex;
+  justify-content: center;
+  border: none;
+}
+#footer #footer-content {
+  display: flex;
+  width: 60%;
+  color: white;
+  background-color: #a599b5;
+  padding: 1%;
+}
+@media (max-width:500px) {
+  #footer #footer-content {
+    flex-direction: column;
+  }
+}
+#footer #app-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+#footer #app-button a {
+  text-decoration: none;
+}
+#footer #app-button div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #c8d1d1;
+  color: #2c2929;
+  height: 60px;
+  width: 600px;
+  border-radius: 1rem;
+}
+@media (max-width:500px) {
+  #footer #app-button div {
+    margin-top: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #c8d1d1;
+    color: #2c2929;
+    height: 20px;
+    width: 150px;
+    border-radius: 1rem;
+  }
+}

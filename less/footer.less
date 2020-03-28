@@ -1,0 +1,46 @@
+#footer {
+	display: flex;
+	justify-content: center;
+
+	#footer-content {
+		display: flex;
+		width: @default-margin;
+		color:white;
+		background-color: @theme-color;
+        padding: 1%;
+        
+        @media @mobil {
+			
+			flex-direction: column;
+		}
+    }
+    
+    #app-button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        
+        a{
+            text-decoration: none;
+            
+        }
+
+        div {
+            
+            .style-button(#c8d1d1, rgb(44, 41, 41), 60px, 600px, 1rem);
+            
+          }
+
+          @media @mobil {
+			
+			div {
+                margin-top: 5%;
+                .style-button(#c8d1d1, rgb(44, 41, 41), 20px, 150px, 1rem);
+                
+              }
+		}
+    }
+
+	border: none;
+}

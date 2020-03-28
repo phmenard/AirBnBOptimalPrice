@@ -1,0 +1,75 @@
+#my-header {
+	.flex-center();
+	border: none;
+
+	#header-info h1, p {
+		margin: 1%;
+        color: white;
+        font-size: xx-large;
+
+        @media @mobil {
+            font-size: 100%;
+            
+            
+        }
+	}
+	
+	
+	header {
+		//margin: 2% 0 0 0; // marging at the top or no margin.
+		width: @default-margin;
+		background-color: @theme-color;
+
+		h1 {
+            margin-top: 1%;
+            
+		}
+		
+		p {
+			font-size: 0.7rem;
+			margin-top: 0.2%;
+		}
+
+		nav {
+			display: flex;
+			justify-content: flex-end;
+			
+
+			a {
+				padding: 0 8% 1% 0;
+				margin-top: 2%;
+				text-decoration: none;
+                color: white;
+                
+                
+
+				
+			}
+
+			#header-info {
+				display: flex;
+				justify-content: center;
+				
+
+				
+			}
+
+			@media @mobil {
+				flex-direction: column;
+				justify-content: center;
+                align-items: center;
+                
+                
+            }
+            
+            :hover{
+                color: #acbdba;
+            }
+
+			
+			
+		}
+
+		
+	}
+}
