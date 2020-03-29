@@ -1,17 +1,28 @@
-#kitchen {
-   border: solid 5px red; 
-
+#kitchen { 
    display: flex;
    flex-direction: row;
 
+    @media (min-width: 500px) {
+        display: flex;
+        flex-direction: column;
+
+        // width: 100%;
+    }
+
    img{
        margin-top: 2%;
+
+       @media (min-width: 500px) {
+        width: 100%;
+        padding-bottom: 3%;
+    }
    }
 
    .kitchen_info {
        display: flex;
        flex-direction: column;
        margin: 3%;
+        
 
        h4, p, li {
            margin: 2%;;

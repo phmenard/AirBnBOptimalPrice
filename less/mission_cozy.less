@@ -1,8 +1,15 @@
 #Cozy {
-    border: solid 5px red; 
+    // border: solid 5px red; 
  
     display: flex;
     flex-direction: row-reverse;
+
+    @media (min-width: 500px) {
+        display: flex;
+        flex-direction: column;
+
+        // width: 100%;
+    }
  
     img{
         margin-top: 1%;

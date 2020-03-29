@@ -229,6 +229,12 @@ img {
   width: 250px;
   height: 250px;
 }
+@media (min-width: 500px) {
+  img {
+    width: 100%;
+    padding-bottom: 3%;
+  }
+}
 #Body {
   display: flex;
   justify-content: center;
@@ -236,10 +242,6 @@ img {
   flex-direction: column;
   margin-bottom: 5%;
   margin-top: 5%;
-  border: solid 10px red;
-}
-.statement {
-  border: solid 5px red;
 }
 .statement .list {
   margin-bottom: 5%;
@@ -258,12 +260,23 @@ img {
   }
 }
 #kitchen {
-  border: solid 5px red;
   display: flex;
   flex-direction: row;
 }
+@media (min-width: 500px) {
+  #kitchen {
+    display: flex;
+    flex-direction: column;
+  }
+}
 #kitchen img {
   margin-top: 2%;
+}
+@media (min-width: 500px) {
+  #kitchen img {
+    width: 100%;
+    padding-bottom: 3%;
+  }
 }
 #kitchen .kitchen_info {
   display: flex;
@@ -276,9 +289,14 @@ img {
   margin: 2%;
 }
 #Cozy {
-  border: solid 5px red;
   display: flex;
   flex-direction: row-reverse;
+}
+@media (min-width: 500px) {
+  #Cozy {
+    display: flex;
+    flex-direction: column;
+  }
 }
 #Cozy img {
   margin-top: 1%;
@@ -294,39 +312,53 @@ img {
   margin: 2%;
 }
 #Beach {
-  border: solid 5px purple;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+@media (min-width: 500px) {
+  #Beach {
+    display: flex;
+    flex-direction: column;
+  }
 }
 #Beach h4 {
   margin-left: 3%;
 }
 #testimonials {
-  border: solid 2px blue;
   display: flex;
   align-items: center;
   flex-direction: column;
 }
-#testimonials img {
+@media (min-width: 500px) {
+  #testimonials {
+    align-content: center;
+  }
+}
+#testimonials h4 {
+  align-content: center;
+  margin-bottom: 3%;
+}
+#testimonials h4 img .pic {
   width: 100px;
   height: 100px;
 }
-#testimonials .quote {
+#testimonials h4 img .pic .quote {
   display: flex;
   flex-direction: row;
   width: 80%;
   align-items: space-around;
 }
-#testimonials .testimonial_1 {
-  display: flex;
-  align-content: space-around;
-  width: 20%;
+@media (min-width: 500px) {
+  #testimonials h4 img .pic .quote {
+    display: flex;
+    flex-direction: column;
+  }
 }
-#testimonials .testimonial_2 {
+#testimonials h4 img .pic .quote .testimonial_1 {
   display: flex;
-  align-content: flex-end;
-  width: 20%;
+  align-content: flex-start;
+  width: 150px;
 }
 #footer {
   display: flex;
