@@ -281,17 +281,52 @@ img {
   flex-direction: row-reverse;
 }
 #Cozy img {
-  margin-top: 2%;
+  margin-top: 1%;
 }
-#Cozy .cozy_info {
+#Cozy .cozy-info {
   display: flex;
   flex-direction: column;
   margin: 3%;
 }
-#Cozy .cozy_info h4,
-#Cozy .cozy_info p,
-#Cozy .cozy_info li {
+#Cozy .cozy-info h4,
+#Cozy .cozy-info p,
+#Cozy .cozy-info li {
   margin: 2%;
+}
+#Beach {
+  border: solid 5px purple;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#Beach h4 {
+  margin-left: 3%;
+}
+#testimonials {
+  border: solid 2px blue;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+#testimonials img {
+  width: 100px;
+  height: 100px;
+}
+#testimonials .quote {
+  display: flex;
+  flex-direction: row;
+  width: 80%;
+  align-items: space-around;
+}
+#testimonials .testimonial_1 {
+  display: flex;
+  align-content: space-around;
+  width: 20%;
+}
+#testimonials .testimonial_2 {
+  display: flex;
+  align-content: flex-end;
+  width: 20%;
 }
 #footer {
   display: flex;
