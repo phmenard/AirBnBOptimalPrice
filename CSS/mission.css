@@ -1,0 +1,374 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+}
+body {
+  background-color: #cddddd;
+}
+h1 {
+  font-size: xx-large;
+}
+h2 {
+  font-size: x-large;
+}
+h3 {
+  font-size: larger;
+}
+h4 {
+  font-size: large;
+}
+#header {
+  display: flex;
+  justify-content: center;
+  border: none;
+}
+#header #header-info h1,
+#header h3,
+#header p {
+  margin: 1%;
+  color: white;
+}
+#header header {
+  margin: 2% 0 0 0;
+  width: 60%;
+  background-color: #a599b5;
+}
+#header header h1,
+#header header h3 {
+  margin-top: 1%;
+}
+#header header p {
+  font-size: 0.7rem;
+  margin-top: 0.2%;
+}
+#header header nav {
+  display: flex;
+  justify-content: flex-end;
+}
+#header header nav a {
+  padding: 0 8% 1% 0;
+  margin-top: 2%;
+  text-decoration: none;
+  color: white;
+}
+#header header nav #header-info {
+  display: flex;
+  justify-content: center;
+}
+@media (max-width: 800px) {
+  #header header nav {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+#intro {
+  display: flex;
+  justify-content: center;
+}
+#intro #intro-info {
+  display: flex;
+  width: 60%;
+}
+@media (max-width: 750px) {
+  #intro #intro-info #intro-a img {
+    width: 100%;
+    padding-bottom: 3%;
+  }
+}
+#intro #intro-info #intro-b {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 5%;
+}
+#intro #intro-info #intro-b h1 {
+  display: flex;
+  justify-content: space-evenly;
+}
+@media (max-width: 800px) {
+  #intro #intro-info #intro-b h1 {
+    margin: 3% 0 3% 3%;
+  }
+}
+@media (max-width: 800px) {
+  #intro #intro-info {
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+img {
+  width: 250px;
+  height: 250px;
+}
+@media (min-width: 500px) {
+  img {
+    width: 100%;
+    padding-bottom: 3%;
+  }
+}
+#Body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 5%;
+  margin-top: 5%;
+}
+.statement .list {
+  margin-bottom: 5%;
+}
+.statement .list li {
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: fit-content;
+  margin: 2%;
+}
+@media (max-width: 800px) {
+  .statement {
+    width: 100%;
+    padding-bottom: 3%;
+    flex-direction: column;
+  }
+}
+#kitchen {
+  display: flex;
+  flex-direction: row;
+}
+@media (min-width: 500px) {
+  #kitchen {
+    display: flex;
+    flex-direction: column;
+  }
+}
+#kitchen img {
+  margin-top: 2%;
+}
+@media (min-width: 500px) {
+  #kitchen img {
+    width: 100%;
+    padding-bottom: 3%;
+  }
+}
+#kitchen .kitchen_info {
+  display: flex;
+  flex-direction: column;
+  margin: 3%;
+}
+#kitchen .kitchen_info h4,
+#kitchen .kitchen_info p,
+#kitchen .kitchen_info li {
+  margin: 2%;
+}
+#Cozy {
+  display: flex;
+  flex-direction: row-reverse;
+}
+@media (min-width: 500px) {
+  #Cozy {
+    display: flex;
+    flex-direction: column;
+  }
+}
+#Cozy img {
+  margin-top: 1%;
+}
+#Cozy .cozy-info {
+  display: flex;
+  flex-direction: column;
+  margin: 3%;
+}
+#Cozy .cozy-info h4,
+#Cozy .cozy-info p,
+#Cozy .cozy-info li {
+  margin: 2%;
+}
+#Beach {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media (min-width: 500px) {
+  #Beach {
+    display: flex;
+    flex-direction: column;
+  }
+}
+#Beach h4 {
+  margin-left: 3%;
+}
+#testimonials {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+@media (min-width: 500px) {
+  #testimonials {
+    align-content: center;
+  }
+}
+#testimonials h4 {
+  align-content: center;
+  margin-bottom: 3%;
+}
+#testimonials h4 img .pic {
+  width: 100px;
+  height: 100px;
+}
+#testimonials h4 img .pic .quote {
+  display: flex;
+  flex-direction: row;
+  width: 80%;
+  align-items: space-around;
+}
+@media (min-width: 500px) {
+  #testimonials h4 img .pic .quote {
+    display: flex;
+    flex-direction: column;
+  }
+}
+#testimonials h4 img .pic .quote .testimonial_1 {
+  display: flex;
+  align-content: flex-start;
+  width: 150px;
+}
+#footer {
+  display: flex;
+  justify-content: center;
+  border: none;
+}
+#footer #footer-content {
+  display: flex;
+  width: 60%;
+  color: white;
+  background-color: #a599b5;
+  padding: 1%;
+}
